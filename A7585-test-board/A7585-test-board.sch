@@ -184,17 +184,6 @@ Wire Wire Line
 Wire Wire Line
 	950  1950 950  1850
 $Comp
-L Device:Jumper JP3
-U 1 1 60BA667A
-P 1800 2400
-F 0 "JP3" V 1846 2312 50  0000 R CNN
-F 1 "Jumper" V 1755 2312 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1800 2400 50  0001 C CNN
-F 3 "~" H 1800 2400 50  0001 C CNN
-	1    1800 2400
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R_US R204
 U 1 1 60BAA092
 P 1800 1550
@@ -203,17 +192,6 @@ F 1 "10K" H 1868 1505 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 1840 1540 50  0001 C CNN
 F 3 "~" H 1800 1550 50  0001 C CNN
 	1    1800 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0107
-U 1 1 60BAB54E
-P 1800 2700
-F 0 "#PWR0107" H 1800 2450 50  0001 C CNN
-F 1 "GND" H 1805 2527 50  0000 C CNN
-F 2 "" H 1800 2700 50  0001 C CNN
-F 3 "" H 1800 2700 50  0001 C CNN
-	1    1800 2700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -866,50 +844,6 @@ Text Notes 3400 5400 0    50   ~ 0
 Connector for \nI2C OLED display
 Text Notes 4250 6150 0    50   ~ 0
 I2C bus 1
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 61100308
-P 1000 950
-F 0 "H1" H 1100 996 50  0000 L CNN
-F 1 "MountingHole" H 1100 905 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 1000 950 50  0001 C CNN
-F 3 "~" H 1000 950 50  0001 C CNN
-	1    1000 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 6110B90D
-P 1000 1250
-F 0 "H2" H 1100 1296 50  0000 L CNN
-F 1 "MountingHole" H 1100 1205 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 1000 1250 50  0001 C CNN
-F 3 "~" H 1000 1250 50  0001 C CNN
-	1    1000 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 6110BFC1
-P 1000 1500
-F 0 "H3" H 1100 1546 50  0000 L CNN
-F 1 "MountingHole" H 1100 1455 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 1000 1500 50  0001 C CNN
-F 3 "~" H 1000 1500 50  0001 C CNN
-	1    1000 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 6110C5E9
-P 1000 1700
-F 0 "H4" H 1100 1746 50  0000 L CNN
-F 1 "MountingHole" H 1100 1655 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 1000 1700 50  0001 C CNN
-F 3 "~" H 1000 1700 50  0001 C CNN
-	1    1000 1700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4150 4850 4600 4850
 Wire Wire Line
@@ -979,5 +913,115 @@ F 2 "Connector:Banana_Jack_1Pin" H 7600 2800 50  0001 C CNN
 F 3 "~" H 7600 2800 50  0001 C CNN
 	1    7600 2850
 	0    -1   1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 610A1B28
+P 650 750
+F 0 "H1" H 750 799 50  0000 L CNN
+F 1 "MountingHole_Pad" H 750 708 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 650 750 50  0001 C CNN
+F 3 "~" H 650 750 50  0001 C CNN
+	1    650  750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 610A2491
+P 2600 700
+F 0 "H4" H 2700 749 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2700 658 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 2600 700 50  0001 C CNN
+F 3 "~" H 2600 700 50  0001 C CNN
+	1    2600 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 610A27A1
+P 650 1250
+F 0 "H2" H 750 1299 50  0000 L CNN
+F 1 "MountingHole_Pad" H 750 1208 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 650 1250 50  0001 C CNN
+F 3 "~" H 650 1250 50  0001 C CNN
+	1    650  1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 610A333E
+P 1650 750
+F 0 "H3" H 1750 799 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1750 708 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1650 750 50  0001 C CNN
+F 3 "~" H 1650 750 50  0001 C CNN
+	1    1650 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 60BAB54E
+P 1800 2700
+F 0 "#PWR0107" H 1800 2450 50  0001 C CNN
+F 1 "GND" H 1805 2527 50  0000 C CNN
+F 2 "" H 1800 2700 50  0001 C CNN
+F 3 "" H 1800 2700 50  0001 C CNN
+	1    1800 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP3
+U 1 1 60BA667A
+P 1800 2400
+F 0 "JP3" V 1846 2312 50  0000 R CNN
+F 1 "Jumper" V 1755 2312 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1800 2400 50  0001 C CNN
+F 3 "~" H 1800 2400 50  0001 C CNN
+	1    1800 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 610A737A
+P 1650 850
+F 0 "#PWR03" H 1650 600 50  0001 C CNN
+F 1 "GND" H 1655 677 50  0000 C CNN
+F 2 "" H 1650 850 50  0001 C CNN
+F 3 "" H 1650 850 50  0001 C CNN
+	1    1650 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 610A79D5
+P 2600 800
+F 0 "#PWR04" H 2600 550 50  0001 C CNN
+F 1 "GND" H 2605 627 50  0000 C CNN
+F 2 "" H 2600 800 50  0001 C CNN
+F 3 "" H 2600 800 50  0001 C CNN
+	1    2600 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 610A7D20
+P 650 1350
+F 0 "#PWR02" H 650 1100 50  0001 C CNN
+F 1 "GND" H 655 1177 50  0000 C CNN
+F 2 "" H 650 1350 50  0001 C CNN
+F 3 "" H 650 1350 50  0001 C CNN
+	1    650  1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 610A8025
+P 650 850
+F 0 "#PWR01" H 650 600 50  0001 C CNN
+F 1 "GND" H 655 677 50  0000 C CNN
+F 2 "" H 650 850 50  0001 C CNN
+F 3 "" H 650 850 50  0001 C CNN
+	1    650  850 
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
