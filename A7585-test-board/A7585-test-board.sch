@@ -904,17 +904,6 @@ Connection ~ 6000 4950
 Wire Wire Line
 	6350 2850 7500 2850
 $Comp
-L Connector:Conn_Coaxial_Power J4
-U 1 1 611FF83A
-P 7600 2850
-F 0 "J4" V 7475 2800 50  0000 C CNN
-F 1 "Conn_Coaxial_Power" H 7688 2755 50  0001 L CNN
-F 2 "Connector:Banana_Jack_1Pin" H 7600 2800 50  0001 C CNN
-F 3 "~" H 7600 2800 50  0001 C CNN
-	1    7600 2850
-	0    -1   1    0   
-$EndComp
-$Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 610A1B28
 P 650 750
@@ -1022,6 +1011,39 @@ F 1 "GND" H 655 677 50  0000 C CNN
 F 2 "" H 650 850 50  0001 C CNN
 F 3 "" H 650 850 50  0001 C CNN
 	1    650  850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 610EF2A9
+P 7500 3000
+F 0 "#PWR0113" H 7500 2750 50  0001 C CNN
+F 1 "GND" H 7505 2827 50  0000 C CNN
+F 2 "" H 7500 3000 50  0001 C CNN
+F 3 "" H 7500 3000 50  0001 C CNN
+	1    7500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J200
+U 1 1 6111CAAF
+P 7700 2850
+F 0 "J200" H 7728 2876 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 7728 2785 50  0000 L CNN
+F 2 "A7585-test-board:SMA_Molex_73251-2200_Horizontal" H 7700 2850 50  0001 C CNN
+F 3 "~" H 7700 2850 50  0001 C CNN
+	1    7700 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J201
+U 1 1 6111D07E
+P 7700 3000
+F 0 "J201" H 7728 3026 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 7728 2935 50  0000 L CNN
+F 2 "A7585-test-board:SMA_Molex_73251-2200_Horizontal" H 7700 3000 50  0001 C CNN
+F 3 "~" H 7700 3000 50  0001 C CNN
+	1    7700 3000
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
