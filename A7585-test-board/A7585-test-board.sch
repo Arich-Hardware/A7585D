@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "A7585 Test Board"
 Date "2021-07-30"
-Rev "1.1"
+Rev "1.2"
 Comp "Boston University Physics Department"
 Comment1 "EMPHATIC AEROGEL RICH Detector"
 Comment2 "Ed Kearns and Samuel Fulton"
@@ -318,7 +318,6 @@ Wire Wire Line
 	6250 2950 6350 2950
 Wire Wire Line
 	6350 2950 6350 2850
-Connection ~ 6350 2850
 Wire Wire Line
 	6350 2850 6250 2850
 Wire Wire Line
@@ -744,51 +743,49 @@ Wire Wire Line
 	3250 4800 4050 4800
 Wire Wire Line
 	4050 4800 4050 4550
-Text Notes 2650 4950 0    50   ~ 0
+Text Notes 1300 4450 0    50   ~ 0
 Momentary switches for future use
 $Comp
 L Device:R_POT_US RV301
 U 1 1 610C915C
-P 7400 4750
-F 0 "RV301" H 7332 4750 50  0000 R CNN
-F 1 "R_POT_US" H 7332 4705 50  0001 R CNN
-F 2 "A7585-test-board:Potentiometer_Piher_T-16H_Single_Horizontal" H 7400 4750 50  0001 C CNN
-F 3 "~" H 7400 4750 50  0001 C CNN
-	1    7400 4750
+P 8200 5850
+F 0 "RV301" H 8132 5850 50  0000 R CNN
+F 1 "R_POT_US" H 8132 5805 50  0001 R CNN
+F 2 "A7585-test-board:Potentiometer_Piher_T-16H_Single_Horizontal" H 8200 5850 50  0001 C CNN
+F 3 "~" H 8200 5850 50  0001 C CNN
+	1    8200 5850
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR0129
 U 1 1 610CD219
-P 7400 4500
-F 0 "#PWR0129" H 7400 4350 50  0001 C CNN
-F 1 "VCC" H 7417 4673 50  0000 C CNN
-F 2 "" H 7400 4500 50  0001 C CNN
-F 3 "" H 7400 4500 50  0001 C CNN
-	1    7400 4500
+P 8200 5600
+F 0 "#PWR0129" H 8200 5450 50  0001 C CNN
+F 1 "VCC" H 8217 5773 50  0000 C CNN
+F 2 "" H 8200 5600 50  0001 C CNN
+F 3 "" H 8200 5600 50  0001 C CNN
+	1    8200 5600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0130
 U 1 1 610CD89F
-P 7400 4950
-F 0 "#PWR0130" H 7400 4700 50  0001 C CNN
-F 1 "GND" H 7405 4777 50  0000 C CNN
-F 2 "" H 7400 4950 50  0001 C CNN
-F 3 "" H 7400 4950 50  0001 C CNN
-	1    7400 4950
+P 8200 6050
+F 0 "#PWR0130" H 8200 5800 50  0001 C CNN
+F 1 "GND" H 8205 5877 50  0000 C CNN
+F 2 "" H 8200 6050 50  0001 C CNN
+F 3 "" H 8200 6050 50  0001 C CNN
+	1    8200 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7400 4600 7400 4500
+	8200 5700 8200 5600
 Wire Wire Line
-	7400 4900 7400 4950
-Text Notes 7550 4950 0    50   ~ 0
+	8200 6000 8200 6050
+Text Notes 8350 6050 0    50   ~ 0
 Potentiometer for future use
 Text Notes 7200 5550 0    50   ~ 0
 I2C bus 0
-Wire Wire Line
-	6000 4750 7250 4750
 Wire Wire Line
 	7100 2150 7100 5550
 Wire Wire Line
@@ -898,17 +895,14 @@ Connection ~ 6000 5850
 Connection ~ 6000 4250
 Connection ~ 6000 6050
 Connection ~ 6000 4350
-Connection ~ 6000 4750
 Connection ~ 6000 4850
 Connection ~ 6000 4950
-Wire Wire Line
-	6350 2850 7500 2850
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 610A1B28
 P 650 750
 F 0 "H1" H 750 799 50  0000 L CNN
-F 1 "MountingHole_Pad" H 750 708 50  0000 L CNN
+F 1 "MountingHole_Pad" H 750 708 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 650 750 50  0001 C CNN
 F 3 "~" H 650 750 50  0001 C CNN
 	1    650  750 
@@ -917,34 +911,34 @@ $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 610A2491
-P 2600 700
-F 0 "H4" H 2700 749 50  0000 L CNN
-F 1 "MountingHole_Pad" H 2700 658 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 2600 700 50  0001 C CNN
-F 3 "~" H 2600 700 50  0001 C CNN
-	1    2600 700 
+P 1700 750
+F 0 "H4" H 1800 799 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1800 708 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1700 750 50  0001 C CNN
+F 3 "~" H 1700 750 50  0001 C CNN
+	1    1700 750 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 610A27A1
-P 650 1250
-F 0 "H2" H 750 1299 50  0000 L CNN
-F 1 "MountingHole_Pad" H 750 1208 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 650 1250 50  0001 C CNN
-F 3 "~" H 650 1250 50  0001 C CNN
-	1    650  1250
+P 1000 750
+F 0 "H2" H 1100 799 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1100 708 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1000 750 50  0001 C CNN
+F 3 "~" H 1000 750 50  0001 C CNN
+	1    1000 750 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 610A333E
-P 1650 750
-F 0 "H3" H 1750 799 50  0000 L CNN
-F 1 "MountingHole_Pad" H 1750 708 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1650 750 50  0001 C CNN
-F 3 "~" H 1650 750 50  0001 C CNN
-	1    1650 750 
+P 1350 750
+F 0 "H3" H 1450 799 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1450 708 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1350 750 50  0001 C CNN
+F 3 "~" H 1350 750 50  0001 C CNN
+	1    1350 750 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -972,34 +966,34 @@ $EndComp
 $Comp
 L power:GND #PWR03
 U 1 1 610A737A
-P 1650 850
-F 0 "#PWR03" H 1650 600 50  0001 C CNN
-F 1 "GND" H 1655 677 50  0000 C CNN
-F 2 "" H 1650 850 50  0001 C CNN
-F 3 "" H 1650 850 50  0001 C CNN
-	1    1650 850 
+P 1350 850
+F 0 "#PWR03" H 1350 600 50  0001 C CNN
+F 1 "GND" H 1355 677 50  0000 C CNN
+F 2 "" H 1350 850 50  0001 C CNN
+F 3 "" H 1350 850 50  0001 C CNN
+	1    1350 850 
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR04
 U 1 1 610A79D5
-P 2600 800
-F 0 "#PWR04" H 2600 550 50  0001 C CNN
-F 1 "GND" H 2605 627 50  0000 C CNN
-F 2 "" H 2600 800 50  0001 C CNN
-F 3 "" H 2600 800 50  0001 C CNN
-	1    2600 800 
+P 1700 850
+F 0 "#PWR04" H 1700 600 50  0001 C CNN
+F 1 "GND" H 1705 677 50  0000 C CNN
+F 2 "" H 1700 850 50  0001 C CNN
+F 3 "" H 1700 850 50  0001 C CNN
+	1    1700 850 
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 610A7D20
-P 650 1350
-F 0 "#PWR02" H 650 1100 50  0001 C CNN
-F 1 "GND" H 655 1177 50  0000 C CNN
-F 2 "" H 650 1350 50  0001 C CNN
-F 3 "" H 650 1350 50  0001 C CNN
-	1    650  1350
+P 1000 850
+F 0 "#PWR02" H 1000 600 50  0001 C CNN
+F 1 "GND" H 1005 677 50  0000 C CNN
+F 2 "" H 1000 850 50  0001 C CNN
+F 3 "" H 1000 850 50  0001 C CNN
+	1    1000 850 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1016,34 +1010,221 @@ $EndComp
 $Comp
 L power:GND #PWR0113
 U 1 1 610EF2A9
-P 7500 3000
-F 0 "#PWR0113" H 7500 2750 50  0001 C CNN
-F 1 "GND" H 7505 2827 50  0000 C CNN
-F 2 "" H 7500 3000 50  0001 C CNN
-F 3 "" H 7500 3000 50  0001 C CNN
-	1    7500 3000
+P 8650 3000
+F 0 "#PWR0113" H 8650 2750 50  0001 C CNN
+F 1 "GND" H 8655 2827 50  0000 C CNN
+F 2 "" H 8650 3000 50  0001 C CNN
+F 3 "" H 8650 3000 50  0001 C CNN
+	1    8650 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x01_Female J200
 U 1 1 6111CAAF
-P 7700 2850
-F 0 "J200" H 7728 2876 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 7728 2785 50  0000 L CNN
-F 2 "A7585-test-board:SMA_Molex_73251-2200_Horizontal" H 7700 2850 50  0001 C CNN
-F 3 "~" H 7700 2850 50  0001 C CNN
-	1    7700 2850
+P 8850 2850
+F 0 "J200" H 8878 2876 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 8878 2785 50  0001 L CNN
+F 2 "A7585-test-board:SMA_Molex_73251-2200_Horizontal" H 8850 2850 50  0001 C CNN
+F 3 "~" H 8850 2850 50  0001 C CNN
+	1    8850 2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x01_Female J201
 U 1 1 6111D07E
-P 7700 3000
-F 0 "J201" H 7728 3026 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 7728 2935 50  0000 L CNN
-F 2 "A7585-test-board:SMA_Molex_73251-2200_Horizontal" H 7700 3000 50  0001 C CNN
-F 3 "~" H 7700 3000 50  0001 C CNN
-	1    7700 3000
+P 8850 3000
+F 0 "J201" H 8878 3026 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 8878 2935 50  0001 L CNN
+F 2 "A7585-test-board:SMA_Molex_73251-2200_Horizontal" H 8850 3000 50  0001 C CNN
+F 3 "~" H 8850 3000 50  0001 C CNN
+	1    8850 3000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x05 SW301
+U 1 1 6140389D
+P 1750 5550
+F 0 "SW301" H 1750 5200 50  0000 C CNN
+F 1 "Rotary Encoder PCB" H 2000 5900 50  0000 C CNN
+F 2 "" H 1750 5550 50  0001 C CNN
+F 3 "~" H 1750 5550 50  0001 C CNN
+	1    1750 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61417CFC
+P 2050 5850
+F 0 "#PWR?" H 2050 5600 50  0001 C CNN
+F 1 "GND" H 2055 5677 50  0000 C CNN
+F 2 "" H 2050 5850 50  0001 C CNN
+F 3 "" H 2050 5850 50  0001 C CNN
+	1    2050 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 614188AF
+P 2050 4950
+F 0 "#PWR?" H 2050 4800 50  0001 C CNN
+F 1 "VCC" H 2065 5123 50  0000 C CNN
+F 2 "" H 2050 4950 50  0001 C CNN
+F 3 "" H 2050 4950 50  0001 C CNN
+	1    2050 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4950 2500 4950
+Wire Wire Line
+	2500 4950 2500 5350
+Wire Wire Line
+	2500 5350 1950 5350
+Connection ~ 4600 4950
+Wire Wire Line
+	4600 5050 2600 5050
+Wire Wire Line
+	2600 5050 2600 5450
+Wire Wire Line
+	2600 5450 1950 5450
+Connection ~ 4600 5050
+Wire Wire Line
+	4550 5150 2700 5150
+Wire Wire Line
+	2700 5150 2700 5550
+Wire Wire Line
+	2700 5550 1950 5550
+Wire Wire Line
+	1950 5650 2050 5650
+Wire Wire Line
+	2050 5650 2050 4950
+Wire Wire Line
+	1950 5750 2050 5750
+Wire Wire Line
+	2050 5750 2050 5850
+Text Notes 1450 6300 0    50   ~ 0
+Switch points out from side\nwith pin 1-5 in L-R order
+Text Notes 1650 5550 2    50   ~ 0
+CLK\nDT\nSW
+Text Notes 9150 3000 0    50   ~ 0
+Banana jacks\nPOWER OUT
+Wire Wire Line
+	6700 5850 6700 4750
+Wire Wire Line
+	6700 4750 6000 4750
+Wire Wire Line
+	6700 5850 8050 5850
+Connection ~ 6000 4750
+$Comp
+L Reference_Voltage:LM4040LP-3 U301
+U 1 1 6146E925
+P 9050 4850
+F 0 "U301" V 9096 4763 50  0000 R CNN
+F 1 "LM4040LP-3" V 9005 4763 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9050 4650 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm4040-n.pdf" H 9050 4850 50  0001 C CIN
+	1    9050 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R302
+U 1 1 61475BAD
+P 9050 4500
+F 0 "R302" H 9118 4546 50  0000 L CNN
+F 1 "200" H 9118 4455 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 9090 4490 50  0001 C CNN
+F 3 "~" H 9050 4500 50  0001 C CNN
+	1    9050 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 4650 9050 4700
+$Comp
+L power:GND #PWR?
+U 1 1 6147B224
+P 9050 5050
+F 0 "#PWR?" H 9050 4800 50  0001 C CNN
+F 1 "GND" H 9055 4877 50  0000 C CNN
+F 2 "" H 9050 5050 50  0001 C CNN
+F 3 "" H 9050 5050 50  0001 C CNN
+	1    9050 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6147BFCC
+P 9050 4250
+F 0 "#PWR?" H 9050 4100 50  0001 C CNN
+F 1 "VCC" H 9065 4423 50  0000 C CNN
+F 2 "" H 9050 4250 50  0001 C CNN
+F 3 "" H 9050 4250 50  0001 C CNN
+	1    9050 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 4250 9050 4350
+Wire Wire Line
+	9050 5050 9050 5000
+Connection ~ 9050 4650
+Connection ~ 6000 4650
+Wire Wire Line
+	6000 4650 8350 4650
+Text Notes 8200 4600 0    50   ~ 0
+3.0V Precision \nVoltage Reference
+Wire Wire Line
+	6350 2850 8200 2850
+Connection ~ 6350 2850
+$Comp
+L Device:C C205
+U 1 1 614D7B0F
+P 8200 3000
+F 0 "C205" H 8315 3046 50  0000 L CNN
+F 1 "2.2 uF" H 8315 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8238 2850 50  0001 C CNN
+F 3 "~" H 8200 3000 50  0001 C CNN
+	1    8200 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 614D7B19
+P 8200 3200
+F 0 "#PWR?" H 8200 2950 50  0001 C CNN
+F 1 "GND" H 8205 3027 50  0000 C CNN
+F 2 "" H 8200 3200 50  0001 C CNN
+F 3 "" H 8200 3200 50  0001 C CNN
+	1    8200 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 3200 8200 3150
+Connection ~ 8200 2850
+Wire Wire Line
+	8200 2850 8650 2850
+$Comp
+L Device:C C302
+U 1 1 614E5402
+P 8350 4800
+F 0 "C302" H 8465 4846 50  0000 L CNN
+F 1 "2.2 uF" H 8465 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8388 4650 50  0001 C CNN
+F 3 "~" H 8350 4800 50  0001 C CNN
+	1    8350 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 614E540C
+P 8350 5000
+F 0 "#PWR?" H 8350 4750 50  0001 C CNN
+F 1 "GND" H 8355 4827 50  0000 C CNN
+F 2 "" H 8350 5000 50  0001 C CNN
+F 3 "" H 8350 5000 50  0001 C CNN
+	1    8350 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 5000 8350 4950
+Connection ~ 8350 4650
+Wire Wire Line
+	8350 4650 9050 4650
 $EndSCHEMATC
