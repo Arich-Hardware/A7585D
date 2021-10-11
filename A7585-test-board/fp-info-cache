@@ -1,74 +1,18 @@
-19229130961593347
-A7585-test-board
-7309xBANANA_JACK
-
-
-0
-0
-0
-A7585-test-board
-A7585D_Board
-
-
-0
-26
-26
-A7585-test-board
-Bannana_Jack_2pin
-
-
-0
-2
-2
-A7585-test-board
-Connector_Strip
-
-
-0
-4
-4
-A7585-test-board
-MPM3610
-
-
-0
-4
-4
-A7585-test-board
-PUSH_BUTTON
-
-
-0
-4
-4
-A7585-test-board
+19216075815434307
+A7585-footprints
 Potentiometer_Piher_T-16H_Single_Horizontal
 Potentiometer, horizontal, Piher T-16H Single, http://www.piher-nacesa.com/pdf/22-T16v03.pdf
 Potentiometer horizontal Piher T-16H Single
 0
 3
 3
-A7585-test-board
-RPi_Pico_SMD_TH
-Through hole straight pin header, 2x20, 2.54mm pitch, double rows
-Through hole pin header THT 2x20 2.54mm double row
+A7585-footprints
+Rasberry
+
+
 0
-43
-43
-A7585-test-board
-SMA_Molex_73251-2200_Horizontal
-https://www.molex.com/webdocs/datasheets/pdf/en-us/0732512200_RF_COAX_CONNECTORS.pdf
-SMA THT Female Jack Horizontal
 0
-5
-2
-A7585-test-board
-SW_DIP_SPSTx01_Slide_9.78x4.72mm_W7.62mm_P2.54mm
-1x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x4.72mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)
-DIP Switch SPST Slide 7.62mm 300mil
 0
-3
-3
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
