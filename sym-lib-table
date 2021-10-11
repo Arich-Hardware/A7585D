@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name A7585-test-board_Library)(type Legacy)(uri ${KIPRJMOD}/A7585-test-board_Library.lib)(options "")(descr ""))
-)
