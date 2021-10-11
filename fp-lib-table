@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name A7585-footprints)(type KiCad)(uri /A7585-test-board)(options "")(descr ""))
+)
